@@ -45,6 +45,9 @@ ${userResponses.contribution}
 ${userResponses.testInstructions}
 
 ## Questions
+${userResponses.gitHubUserName}
+${userResponses.email}
+
     `;
 }
 // USER INTERACTIONS ==========================
@@ -81,6 +84,16 @@ inquirer
         type: "input",
         name: "testInstructions",
         message: "Please enter your project test instructions."
+    },
+    {
+        type: "input",
+        name: "gitHubUserName",
+        message: "Please enter your GitHub user name."
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Please enter your GitHub email."
     },
   ])
   .then(response => {
