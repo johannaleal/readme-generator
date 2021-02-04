@@ -126,8 +126,9 @@ inquirer
     writeUserInfo(response);
     console.log(response);
   })
-  // Catch an error if an error occurs.
-  .catch.error(err);
-})
+  // If there is an error console.log the error.
+  .catch.error(err => {
+    console.log(err);
+  })
 
   
