@@ -39,12 +39,16 @@ ${userResponses.usage}
 ## License
 
 ## Contributing
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+
 ${userResponses.contribution}
 
 ## Tests
 ${userResponses.testInstructions}
 
 ## Questions
+GitHub Profile: [@${userResponses.gitHubUserName}](http://github.com/${userResponses.gitHubUserName})
+Email: <${userResponses.email}>
     `;
 }
 // USER INTERACTIONS ==========================
@@ -73,6 +77,12 @@ inquirer
         message: "Please enter your project usage information."
     },
     {
+        type: "list",
+        name: "license",
+        message: "Please choose a license."
+        choices: ["copyleft","lpgl","MIT","permissive","proprietary","public"]
+    },
+    {
         type: "input",
         name: "contribution",
         message: "Please enter your project contribution guidelines."
@@ -81,6 +91,16 @@ inquirer
         type: "input",
         name: "testInstructions",
         message: "Please enter your project test instructions."
+    },
+    {
+        type: "input",
+        name: "gitHubUserName",
+        message: "Please enter your GitHub user name."
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Please enter your GitHub email."
     },
   ])
   .then(response => {
