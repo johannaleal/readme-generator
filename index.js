@@ -62,8 +62,8 @@ const questions = [
         type: "input",
         name: "email",
         message: "Please enter your email address."
-    }
-];
+    },
+]
 
 // FUNCTIONS ==================================
 
@@ -79,9 +79,9 @@ const writeUserInfo = (userResponses) => {
 
 // formatReadMe - takes the user responses to the prompts and creates a string with the user responses inserted as 
 // template literals in the appropriate locations within the output string.
-function formatReadMe(userResponses) {
-    // Return the string which contains the content of the ReadMe file.
-    return `# ${userResponses.title}
+const formatReadMe = (userResponses) => {
+    // Return the content string which contains the content of the ReadMe file.
+    let content = `# ${userResponses.title}
 
 ## Description
 ${userResponses.description}
@@ -115,7 +115,10 @@ GitHub Profile: [@${userResponses.gitHubUserName}](http://github.com/${userRespo
 
 Email: <${userResponses.email}>
     `;
+
+    return content;
 }
+
 // USER INTERACTIONS ==========================
 
 // Prompt the user to get answers to questions.
