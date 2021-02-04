@@ -39,15 +39,22 @@ ${userResponses.usage}
 ## License
 
 ## Contributing
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+
 ${userResponses.contribution}
 
 ## Tests
 ${userResponses.testInstructions}
 
 ## Questions
+<<<<<<< HEAD
+GitHub Profile: [@${userResponses.gitHubUserName}](http://github.com/${userResponses.gitHubUserName})
+Email: <${userResponses.email}>
+=======
 ${userResponses.gitHubUserName}
 ${userResponses.email}
 
+>>>>>>> origin
     `;
 }
 // USER INTERACTIONS ==========================
@@ -74,6 +81,12 @@ inquirer
         type: "input",
         name: "usage",
         message: "Please enter your project usage information."
+    },
+    {
+        type: "list",
+        name: "license",
+        message: "Please choose a license."
+        choices: ["copyleft","lpgl","MIT","permissive","proprietary","public"]
     },
     {
         type: "input",

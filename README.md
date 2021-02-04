@@ -1,7 +1,7 @@
-# My Firs Project
+# ReadMe Generator
 
 ## Description
-This is a projec abput
+In this project, I have created a command-lin application to generate a README file. The application will dynamically generate a prefessional ReadMe.mdf file from a user’s input using the Inquirer package.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -12,18 +12,22 @@ This is a projec abput
 * [Questions](#questions)
 
 ## Installation
-Install this by ;
+In order to install this application you will need the following files: index.js, package.json;
 
 ## Usage
-Use this by
+This application will be invoke by the following command: node index.js
 
 ## License
 
 ## Contributing
-Please contact me for
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+
+ANyone can contribute
 
 ## Tests
-Tests to be done
+tests
 
 ## Questions
+GitHub Profile: [@johannaleal](http://github.com/johannaleal)
+Email: <johannarleal@gmail.com>
     
