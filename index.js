@@ -47,8 +47,14 @@ ${userResponses.contribution}
 ${userResponses.testInstructions}
 
 ## Questions
+<<<<<<< HEAD
 GitHub Profile: [@${userResponses.gitHubUserName}](http://github.com/${userResponses.gitHubUserName})
 Email: <${userResponses.email}>
+=======
+${userResponses.gitHubUserName}
+${userResponses.email}
+
+>>>>>>> origin
     `;
 }
 // USER INTERACTIONS ==========================
