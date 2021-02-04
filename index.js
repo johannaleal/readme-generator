@@ -6,62 +6,62 @@ const inquirer = require('inquirer');
 
 // DATA =======================================
 
-// List of prompts
+// Array of prompts
 const questions = [
     // What is your project title?
     {
         type: "input",
         name: "title",
-        message: "What is your project title?"
+        message: "Enter your project title:"
     },
     // What is your project description?
     {
         type: "input",
         name: "description",
-        message: "Please enter your project description."
+        message: "Enter your project description:"
     },
     // Enter installation instructions.
     {
         type: "input",
         name: "installation",
-        message: "Please enter your project installation instructions."
+        message: "Enter your project installation instructions:"
     },
     // Enter usage information.
     {
         type: "input",
         name: "usage",
-        message: "Please enter your project usage information."
+        message: "Enter your project usage information:"
     },
     // Select a license from a list.
     {
         type: "list",
         name: "license",
-        message: "Please choose a license.",
-        choices: ["copyleft","lpgl","MIT","permissive","proprietary","public"]
+        message: "Choose a license:",
+        choices: ["Apache License 2.0","GNU General Public License v3.0","MIT License","BSD-2-Clause Simplified License","Mozilla Public License 2.0"]
     },
     // Enter constribution guidelines.
     {
         type: "input",
         name: "contribution",
-        message: "Please enter your project contribution guidelines."
+        message: "Enter your project contribution guidelines:"
     },
     // Enter test instructions.
     {
         type: "input",
         name: "testInstructions",
-        message: "Please enter your project test instructions."
+        message: "Enter your project test instructions:"
     },
     // Enter GitHub user name.
     {
         type: "input",
         name: "gitHubUserName",
-        message: "Please enter your GitHub user name."
+        message: "Enter your GitHub user name:"
     },
     // Enter your email address.
     {
         type: "input",
         name: "email",
-        message: "Please enter your email address."
+        message: "Enter your email address:"
     },
 ]
 
@@ -80,6 +80,29 @@ const writeUserInfo = (userResponses) => {
 // formatReadMe - takes the user responses to the prompts and creates a string with the user responses inserted as 
 // template literals in the appropriate locations within the output string.
 const formatReadMe = (userResponses) => {
+    // Find the selected badge link.
+    let link = "";
+
+    switch (userResponses.license)  {
+        case "Apache License 2.0":
+            link = "[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)";
+            break;
+        case "GNU General Public License v3.0":
+            link = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+            break;
+        case "MIT License":
+            link = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+            break;
+        case "BSD-2-Clause Simplified License":
+            link = "[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)";
+            break;
+        case "Mozilla Public License 2.0":
+            link = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+            break;
+     };
+
+     console.log(`The badge link is ${link}`);
+
     // Return the content string which contains the content of the ReadMe file.
     let content = `# ${userResponses.title}
 
@@ -101,16 +124,17 @@ ${userResponses.installation};
 ${userResponses.usage}
 
 ## License
+${link}
 
 ## Contributing
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
-
 ${userResponses.contribution}
 
 ## Tests
 ${userResponses.testInstructions}
 
 ## Questions
+### Contact Information:
+
 GitHub Profile: [@${userResponses.gitHubUserName}](http://github.com/${userResponses.gitHubUserName})
 
 Email: <${userResponses.email}>
@@ -125,13 +149,12 @@ Email: <${userResponses.email}>
 inquirer
   .prompt(questions)
   // Write a ReadMe file using the amswers to the prompts.
-  .then(response => {
-    writeUserInfo(response);
-    console.log(response);
+  .then(userResponse => {
+    writeUserInfo(userResponse);
   })
-  // If there is an error console.log the error.
-  .catch.error(err => {
-    console.log(err);
+  // If there is an error, write an error to the console.
+  .catch(err => {
+    console.error(err);
   })
 
   
