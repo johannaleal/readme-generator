@@ -31,6 +31,9 @@ In this project, I have created a command-line application to generate a README 
     >.DS_Store/
 
 ## Usage
+![Demo GIF](./images/ReadMeGeneratorDemo.gif)
+
+
 To run this app, open the console in the directory where the index.js file is and run the following command:
 >node index.js
 
