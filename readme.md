@@ -25,6 +25,10 @@ In this project, I have created a command-line application to generate a README 
 4. Make sure that the following files exist in your application folder:
 >- index.js
 >- .gitignore
+5. The .gitmore file should contain the following:
+    >node_modules/
+
+    >.DS_Store/
 
 ## Usage
 To run this app, open the console in the directory where the index.js file is and run the following command:
@@ -43,6 +47,41 @@ You will receive prompts for the following:
 
 _Note that for Installation Instructions and Test Instructions, you will be prompted to enter your information in your local editor. If there are several steps involved in either of these sections, it is best to use numbered lists._
 
+## Screenshots
+
+#### Enter Project Title, Project Description, Installation Instructions
+
+![Enter Title Description Install Instructions](./images/screen1.PNG)
+
+#### Enter Installation Instructions Editor
+
+![Enter Install Instructions Editor](./images/screen2.PNG)
+
+#### Installation Instructions Editor Prompt to Save
+
+![Installation Instructions Editor Prompt to Save](./images/screen3.PNG)
+
+#### License List Prompt
+
+![Choose License from List](./images/screen4.PNG)
+
+#### Enter Test Instructions Editor Prompt
+
+![Test Instruction Editor Prompt](./images/screen5.PNG)
+
+#### Test Instructions Editor
+
+![Test Instruction Editor](./images/screen6.PNG)
+
+#### Email Validation Error Message
+
+![Email Validation Error Message](./images/screen7.PNG)
+
+#### File Successfully Generated Message
+
+![File Successfully Generated Message](./images/screen8.PNG)
+
+
 ## License
 This application is covered under license: MIT License.
 
@@ -50,7 +89,13 @@ This application is covered under license: MIT License.
 If you would like to contribute to this repository, please contact me via email below to discuss the changes you wish to make.
 
 ## Tests
-To test follow these instructions:
+To test follow these instructions: 
+1. Type in terminal:
+    > node index.js
+2. Follow all the prompts and enter data.
+3. When the file has been successfully created you will get a success message.
+4. Go to your application directory and verify that the ReadMe file is there.
+5. Open it and verify that all the data you entered is there.
 
 ## Questions
 ### Contact Information:
