@@ -4,7 +4,7 @@
 
 ## Description
 
-THis is my description.
+This is my description
 
 ## Table of Contents
 * [Installation](#installation)
@@ -15,10 +15,10 @@ THis is my description.
 * [Questions](#questions)
 
 ## Installation
-;
+Install;
 
 ## Usage
-
+Use it like this
 
 ## License
 This application is covered under license: Apache License 2.0
@@ -27,12 +27,13 @@ This application is covered under license: Apache License 2.0
 
 
 ## Tests
-
+Step 1
+Step 2
 
 ## Questions
 ### Contact Information:
 
-GitHub Profile: [@](http://github.com/)
+GitHub Profile: [@johannaleal](http://github.com/johannaleal)
 
-Email: <>
+Email: <johanna@gmail.com>
     

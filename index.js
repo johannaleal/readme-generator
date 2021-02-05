@@ -4,10 +4,11 @@
 const fs = require('fs');
 const { registerPrompt } = require('inquirer');
 const inquirer = require('inquirer');
+const validator = require('email-validator');
 
 // DATA =======================================
 
-// Array of prompts
+// Validate required input.
 const confirmResponse = (input) => {
     if (input === "") {
         return "This field is required!"
@@ -15,6 +16,26 @@ const confirmResponse = (input) => {
     return true;
 }
 
+// // Validate for correct email format.
+// function validateEmail(email) {
+//     if (validator.validate(email)) {
+//         return true;
+//     }
+//     else {
+//         return "This email is not valid!";
+//     }
+// }
+
+const validateEmail = (input) => {
+    if (validator.validate(input)) {
+        return true;
+    }
+    else {
+        return "This email is not valid!";
+    }
+}
+
+// Array of prompts
 const questions = [
     // What is your project title?
     {
@@ -71,7 +92,8 @@ const questions = [
     {
         type: "input",
         name: "email",
-        message: "Enter your email address:"
+        message: "Enter your email address:",
+        validate: validateEmail
     },
 ]
 
