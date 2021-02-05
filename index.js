@@ -47,7 +47,7 @@ const questions = [
     },
     // Enter test instructions.
     {
-        type: "input",
+        type: "editor",
         name: "testInstructions",
         message: "Enter your project test instructions:"
     },
@@ -107,6 +107,8 @@ const formatReadMe = (userResponses) => {
     let content = `# ${userResponses.title}
 
 ## Description
+${link}
+
 ${userResponses.description}
 
 ## Table of Contents
@@ -124,7 +126,7 @@ ${userResponses.installation};
 ${userResponses.usage}
 
 ## License
-${link}
+This application is covered under license: ${userResponses.license}
 
 ## Contributing
 ${userResponses.contribution}

@@ -1,7 +1,9 @@
 # ReadMe Generator
 
 ## Description
-In this project, I have created a command-lin application to generate a README file. The application will dynamically generate a prefessional ReadMe.mdf file from a user’s input using the Inquirer package.
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
+This is my project description.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -12,24 +14,27 @@ In this project, I have created a command-lin application to generate a README f
 * [Questions](#questions)
 
 ## Installation
-In order to install this application you will need the following files: index.js, package.json;
+Step 1.
+Step 2.
+Step 3.
+;
 
 ## Usage
-This application will be invoke by the following command: node index.js
+Use it as you will.
 
 ## License
-[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+This application is covered under license: GNU General Public License v3.0
 
 ## Contributing
-Please contact me if you would like to contribute.
+Contribute all the time.
 
 ## Tests
-Test it like this.
+Test 1. Test 2.
 
 ## Questions
 ### Contact Information:
 
 GitHub Profile: [@johannaleal](http://github.com/johannaleal)
 
-Email: <johannarleal@gmail.com>
+Email: <johannarleal>
     
