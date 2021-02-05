@@ -25,7 +25,7 @@ In this project, I have created a command-line application to generate a README 
 4. Make sure that the following files exist in your application folder:
 >- index.js
 >- .gitignore
-5. The .gitmore file should contain the following:
+5. The .gitmore file should contain the following lines:
     >node_modules/
 
     >.DS_Store/
@@ -86,16 +86,18 @@ _Note that for Installation Instructions and Test Instructions, you will be prom
 This application is covered under license: MIT License.
 
 ## Contributing
-If you would like to contribute to this repository, please contact me via email below to discuss the changes you wish to make.
+If you would like to contribute to this repository, please contact me via the email below to discuss the changes you wish to make.
 
 ## Tests
-To test follow these instructions: 
+To test, follow these instructions: 
 1. Type in terminal:
     > node index.js
 2. Follow all the prompts and enter data.
 3. When the file has been successfully created you will get a success message.
 4. Go to your application directory and verify that the ReadMe file is there.
 5. Open it and verify that all the data you entered is there.
+
+_NOTE: FOR TESTING PURPOSES I NAMED THE OUTPUT FILE README_TEST.MD SO AS NOT TO OVERWRITE MY ACTUAL README FILE. YOU CAN CHANGE THIS IN THE writeUserInfo CONST._
 
 ## Questions
 ### Contact Information:
