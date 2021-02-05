@@ -2,23 +2,33 @@
 
 // Built in node and npd packages
 const fs = require('fs');
+const { registerPrompt } = require('inquirer');
 const inquirer = require('inquirer');
 
 // DATA =======================================
 
 // Array of prompts
+const confirmResponse = (input) => {
+    if (input === "") {
+        return "This field is required!"
+    }
+    return true;
+}
+
 const questions = [
     // What is your project title?
     {
         type: "input",
         name: "title",
-        message: "Enter your project title:"
+        message: "Enter your project title:",
+        validate: confirmResponse
     },
     // What is your project description?
     {
         type: "input",
         name: "description",
-        message: "Enter your project description:"
+        message: "Enter your project description:",
+        validate: confirmResponse
     },
     // Enter installation instructions.
     {
@@ -106,8 +116,9 @@ const formatReadMe = (userResponses) => {
     // Return the content string which contains the content of the ReadMe file.
     let content = `# ${userResponses.title}
 
-## Description
 ${link}
+
+## Description
 
 ${userResponses.description}
 

@@ -1,9 +1,10 @@
-# ReadMe Generator
+# My Project
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Description
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-This is my project description.
+THis is my description.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -14,27 +15,24 @@ This is my project description.
 * [Questions](#questions)
 
 ## Installation
-Step 1.
-Step 2.
-Step 3.
 ;
 
 ## Usage
-Use it as you will.
+
 
 ## License
-This application is covered under license: GNU General Public License v3.0
+This application is covered under license: Apache License 2.0
 
 ## Contributing
-Contribute all the time.
+
 
 ## Tests
-Test 1. Test 2.
+
 
 ## Questions
 ### Contact Information:
 
-GitHub Profile: [@johannaleal](http://github.com/johannaleal)
+GitHub Profile: [@](http://github.com/)
 
-Email: <johannarleal>
+Email: <>
     
