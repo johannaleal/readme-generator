@@ -2,9 +2,29 @@
 
 // Built in node and npd packages
 const fs = require('fs');
+//const { registerPrompt } = require('inquirer');
 const inquirer = require('inquirer');
+const validator = require('email-validator');
 
 // DATA =======================================
+
+// Validate required input.
+const confirmResponse = (input) => {
+    if (input === "") {
+        return "This field is required!"
+    }
+    return true;
+}
+// Validate the email format.
+// Return an error message if not correct.
+const validateEmail = (input) => {
+    if (validator.validate(input)) {
+        return true;
+    }
+    else {
+        return "This email is not valid!";
+    }
+}
 
 // Array of prompts
 const questions = [
@@ -12,17 +32,19 @@ const questions = [
     {
         type: "input",
         name: "title",
-        message: "Enter your project title:"
+        message: "Enter your project title:",
+        validate: confirmResponse
     },
     // What is your project description?
     {
         type: "input",
         name: "description",
-        message: "Enter your project description:"
+        message: "Enter your project description:",
+        validate: confirmResponse
     },
     // Enter installation instructions.
     {
-        type: "input",
+        type: "editor",
         name: "installation",
         message: "Enter your project installation instructions:"
     },
@@ -47,7 +69,7 @@ const questions = [
     },
     // Enter test instructions.
     {
-        type: "input",
+        type: "editor",
         name: "testInstructions",
         message: "Enter your project test instructions:"
     },
@@ -61,7 +83,8 @@ const questions = [
     {
         type: "input",
         name: "email",
-        message: "Enter your email address:"
+        message: "Enter your email address:",
+        validate: validateEmail
     },
 ]
 
@@ -106,7 +129,10 @@ const formatReadMe = (userResponses) => {
     // Return the content string which contains the content of the ReadMe file.
     let content = `# ${userResponses.title}
 
+${link}
+
 ## Description
+
 ${userResponses.description}
 
 ## Table of Contents
@@ -124,7 +150,7 @@ ${userResponses.installation};
 ${userResponses.usage}
 
 ## License
-${link}
+This application is covered under license: ${userResponses.license}
 
 ## Contributing
 ${userResponses.contribution}

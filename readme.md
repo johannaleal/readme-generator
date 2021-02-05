@@ -1,7 +1,10 @@
-# ReadMe Generator
+# Professional README Generator
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-In this project, I have created a command-lin application to generate a README file. The application will dynamically generate a prefessional ReadMe.mdf file from a user’s input using the Inquirer package.
+
+In this project, I have created a command-line application to generate a README file. The application will dynamically generate a professional ReadMe.md file from a user’s input using the Inquirer package. The user will be presented with various prompts whose data will be used to populate the sections of the ReadMe file. Some of these sections will be validated including the project title, project description, and email address.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -12,19 +15,42 @@ In this project, I have created a command-lin application to generate a README f
 * [Questions](#questions)
 
 ## Installation
-In order to install this application you will need the following files: index.js, package.json;
+1. Install node.js. It can be downloaded here: [node.js Downloads](https://nodejs.org/en/download/)
+2. Install npm inquirer package by typing:
+    >npm init -y
+
+    >npm install inquirer
+3. Install inquirer email-validator package by typing:
+    >npm install email-validator
+4. Make sure that the following files exist in your application folder:
+>- index.js
+>- .gitignore
 
 ## Usage
-This application will be invoke by the following command: node index.js
+To run this app, open the console in the directory where the index.js file is and run the following command:
+>node index.js
+
+You will receive prompts for the following:
+1. Project Title - required
+2. Project Description - required
+3. Installation Instructions - optional
+4. Usage Information - optional
+5. License - required; choose from a list
+6. Contribution Guidelines - optional
+7. Test Instructions - optional
+8. GitHub Username - optional
+9. Email Address - required and validated for correct format
+
+_Note that for Installation Instructions and Test Instructions, you will be prompted to enter your information in your local editor. If there are several steps involved in either of these sections, it is best to use numbered lists._
 
 ## License
-[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)
+This application is covered under license: MIT License.
 
 ## Contributing
-Please contact me if you would like to contribute.
+If you would like to contribute to this repository, please contact me via email below to discuss the changes you wish to make.
 
 ## Tests
-Test it like this.
+To test follow these instructions:
 
 ## Questions
 ### Contact Information:
