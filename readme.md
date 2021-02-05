@@ -61,6 +61,18 @@ _Note that for Installation Instructions and Test Instructions, you will be prom
 
 ![Installation Instructions Editor Prompt to Save](./images/screen3.PNG)
 
+#### Enter Usage Instructions Prompt
+
+![Enter Usage Instructions Prompt](./images/usage1.PNG)
+
+#### Enter Usage Instructions Editor
+
+![Enter Usage Instructions Editor](./images/usage2.PNG)
+
+#### Enter Usage Instructions Prompt to Save
+
+![Enter Usage Instructions Prompt to Save](./images/usage3.PNG)
+
 #### License List Prompt
 
 ![Choose License from List](./images/screen4.PNG)

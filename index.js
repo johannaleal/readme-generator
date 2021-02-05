@@ -50,7 +50,7 @@ const questions = [
     },
     // Enter usage information.
     {
-        type: "input",
+        type: "editor",
         name: "usage",
         message: "Enter your project usage information:"
     },
@@ -61,7 +61,7 @@ const questions = [
         message: "Choose a license:",
         choices: ["Apache License 2.0","GNU General Public License v3.0","MIT License","BSD-2-Clause Simplified License","Mozilla Public License 2.0"]
     },
-    // Enter constribution guidelines.
+    // Enter contribution guidelines.
     {
         type: "input",
         name: "contribution",
