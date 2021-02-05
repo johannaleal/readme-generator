@@ -63,15 +63,15 @@ _Note that for Installation Instructions and Test Instructions, you will be prom
 
 #### Enter Usage Instructions Prompt
 
-![Enter Usage Instructions Prompt](./images/usage1.PNG)
+![Enter Usage Instructions Prompt](./images/Usage1.PNG)
 
 #### Enter Usage Instructions Editor
 
-![Enter Usage Instructions Editor](./images/usage2.PNG)
+![Enter Usage Instructions Editor](./images/Usage2.PNG)
 
 #### Enter Usage Instructions Prompt to Save
 
-![Enter Usage Instructions Prompt to Save](./images/usage3.PNG)
+![Enter Usage Instructions Prompt to Save](./images/Usage3.PNG)
 
 #### License List Prompt
 
