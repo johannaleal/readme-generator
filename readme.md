@@ -1,10 +1,10 @@
-# My Project
+# Professional README Generator
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-This is my description
+In this project, I have created a command-line application to generate a README file. The application will dynamically generate a professional ReadMe.md file from a user’s input using the Inquirer package. The user will be presented with various prompts whose data will be used to populate the sections of the ReadMe file. Some of these sections will be validated including the project title, project description, and email address.
 
 ## Table of Contents
 * [Installation](#installation)
@@ -15,25 +15,47 @@ This is my description
 * [Questions](#questions)
 
 ## Installation
-Install;
+1. Install node.js. It can be downloaded here: [node.js Downloads](https://nodejs.org/en/download/)
+2. Install npm inquirer package by typing:
+    >npm init -y
+
+    >npm install inquirer
+3. Install inquirer email-validator package by typing:
+    >npm install email-validator
+4. Make sure that the following files exist in your application folder:
+>- index.js
+>- .gitignore
 
 ## Usage
-Use it like this
+To run this app, open the console in the directory where the index.js file is and run the following command:
+>node index.js
+
+You will receive prompts for the following:
+1. Project Title - required
+2. Project Description - required
+3. Installation Instructions - optional
+4. Usage Information - optional
+5. License - required; choose from a list
+6. Contribution Guidelines - optional
+7. Test Instructions - optional
+8. GitHub Username - optional
+9. Email Address - required and validated for correct format
+
+_Note that for Installation Instructions and Test Instructions, you will be prompted to enter your information in your local editor. If there are several steps involved in either of these sections, it is best to use numbered lists._
 
 ## License
-This application is covered under license: Apache License 2.0
+This application is covered under license: MIT License.
 
 ## Contributing
-
+If you would like to contribute to this repository, please contact me via email below to discuss the changes you wish to make.
 
 ## Tests
-Step 1
-Step 2
+To test follow these instructions:
 
 ## Questions
 ### Contact Information:
 
 GitHub Profile: [@johannaleal](http://github.com/johannaleal)
 
-Email: <johanna@gmail.com>
+Email: <johannarleal@gmail.com>
     

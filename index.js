@@ -2,7 +2,7 @@
 
 // Built in node and npd packages
 const fs = require('fs');
-const { registerPrompt } = require('inquirer');
+//const { registerPrompt } = require('inquirer');
 const inquirer = require('inquirer');
 const validator = require('email-validator');
 
@@ -15,17 +15,8 @@ const confirmResponse = (input) => {
     }
     return true;
 }
-
-// // Validate for correct email format.
-// function validateEmail(email) {
-//     if (validator.validate(email)) {
-//         return true;
-//     }
-//     else {
-//         return "This email is not valid!";
-//     }
-// }
-
+// Validate the email format.
+// Return an error message if not correct.
 const validateEmail = (input) => {
     if (validator.validate(input)) {
         return true;
@@ -53,7 +44,7 @@ const questions = [
     },
     // Enter installation instructions.
     {
-        type: "input",
+        type: "editor",
         name: "installation",
         message: "Enter your project installation instructions:"
     },
