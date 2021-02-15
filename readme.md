@@ -32,7 +32,7 @@ In this project, I have created a command-line application to generate a README 
 
 ## Usage
 
-![Demo GIF](https://media.giphy.com/media/AJm8DsP6pJtZwtiXc1/giphy.gif)
+![Demo GIF](./images/ReadMeGeneratorWalkThrough.gif)
 
 To run this app, open the console in the directory where the index.js file is and run the following command:
 >node index.js
@@ -55,19 +55,19 @@ _Note that for Installation Instructions and Test Instructions, you will be prom
 
 ### Enter Project Title, Project Description, Installation Instructions, and License
 
-![Enter ReadMe File Data](./images/screen1.PNG)
+![Enter ReadMe File Data](./images/enter-data.PNG)
 
 ### License List Prompt
 
-![Choose License from List](./images/screen3.PNG)
+![Choose License from List](./images/license-prompt.PNG)
 
 ### Invalid Email Message
 
-![Invalid Email Message](./images/screen2.PNG)
+![Invalid Email Message](./images/invalid-email.PNG)
 
 ### File Was Successfully Create
 
-![File Was Successfully Created](./images/screen4.PNG)
+![File Was Successfully Created](./images/file-created.PNG)
 
 ## License
 
