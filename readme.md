@@ -53,49 +53,21 @@ _Note that for Installation Instructions and Test Instructions, you will be prom
 
 ## Screenshots
 
-### Enter Project Title, Project Description, Installation Instructions
+### Enter Project Title, Project Description, Installation Instructions, and License
 
-![Enter Title Description Install Instructions](./images/screen1.PNG)
-
-### Enter Installation Instructions Editor
-
-![Enter Install Instructions Editor](./images/screen2.PNG)
-
-### Installation Instructions Editor Prompt to Save
-
-![Installation Instructions Editor Prompt to Save](./images/screen3.PNG)
-
-### Enter Usage Instructions Prompt
-
-![Enter Usage Instructions Prompt](./images/Usage1.PNG)
-
-### Enter Usage Instructions Editor
-
-![Enter Usage Instructions Editor](./images/Usage2.PNG)
-
-### Enter Usage Instructions Prompt to Save
-
-![Enter Usage Instructions Prompt to Save](./images/Usage3.PNG)
+![Enter ReadMe File Data](./images/screen1.PNG)
 
 ### License List Prompt
 
-![Choose License from List](./images/screen4.PNG)
+![Choose License from List](./images/screen3.PNG)
 
-#### Enter Test Instructions Editor Prompt
+### Invalid Email Message
 
-![Test Instruction Editor Prompt](./images/screen5.PNG)
+![Invalid Email Message](./images/screen2.PNG)
 
-#### Test Instructions Editor
+### File Was Successfully Create
 
-![Test Instruction Editor](./images/screen6.PNG)
-
-#### Email Validation Error Message
-
-![Email Validation Error Message](./images/screen7.PNG)
-
-#### File Successfully Generated Message
-
-![File Successfully Generated Message](./images/screen8.PNG)
+![File Was Successfully Created](./images/screen4.PNG)
 
 ## License
 
