@@ -98,7 +98,7 @@ const writeUserInfo = (userResponses) => {
   // Write the generated content to a file. If there is an error writing to the file, console.log the error message received.
   // Else, console.log an success message.
   // NOTE: FOR TESTING PURPOSES I HAVE NAMED THE OUTPUT FILE README_TEST.MD SO AS NOT TO OVERWRITE MY ACTUAL README.MD FILE.
-  fs.writeFile("readme_test.md", content, (err) => err ? console.error(err) : console.log("File was successly generated!"));
+  fs.writeFile("README_test.md", content, (err) => err ? console.error(err) : console.log("File was successly generated!"));
 }
 
 // formatReadMe - takes the user responses to the prompts and creates a string with the user responses inserted as 
