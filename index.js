@@ -44,13 +44,13 @@ const questions = [
     },
     // Enter installation instructions.
     {
-        type: "editor",
+        type: "input",
         name: "installation",
         message: "Enter your project installation instructions:"
     },
     // Enter usage information.
     {
-        type: "editor",
+        type: "input",
         name: "usage",
         message: "Enter your project usage information:"
     },
@@ -69,7 +69,7 @@ const questions = [
     },
     // Enter test instructions.
     {
-        type: "editor",
+        type: "input",
         name: "testInstructions",
         message: "Enter your project test instructions:"
     },
@@ -135,6 +135,7 @@ ${link}
 ${userResponses.description}
 
 ## Table of Contents
+
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
@@ -143,22 +144,28 @@ ${userResponses.description}
 * [Questions](#questions)
 
 ## Installation
-${userResponses.installation};
+
+${userResponses.installation}
 
 ## Usage
+
 ${userResponses.usage}
 
 ## License
+
 This application is covered under license: ${userResponses.license}
 
 ## Contributing
+
 ${userResponses.contribution}
 
 ## Tests
+
 ${userResponses.testInstructions}
 
 ## Questions
-### Contact Information:
+
+### Contact Information
 
 GitHub Profile: [@${userResponses.gitHubUserName}](http://github.com/${userResponses.gitHubUserName})
 
