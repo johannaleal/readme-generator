@@ -1,4 +1,4 @@
-# ReadMe Generator
+# README Generator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -17,11 +17,11 @@ In this project, I have created a command-line application to generate a README 
 
 ## Installation
 
-1. Install node.js. It can be downloaded here: 2. Install npm inquirer package by typing: >npm init -y >npm install inquire 3. Install inquirer email-validator package by typing: >npm install email-validator 4. Make sure that the following files exist in your application folder: >index.js >.gitignore 5. The .gitmore file should contain the following lines: >node_modules/ >.DS_Store/
+1. Install node.js. 2. Install npm inquirer package by typing: npm init -y ; npm install inquirer
 
 ## Usage
 
-To run this app, open the console in the directory where the index.js file is and run the following command: >node index.js
+To run this app, open the console in the directory where the index.js file is and run the following command: node index.js. You will receive prompts for the following: Project Title (required), Project Description (required), Installation Instructions, Usage Information, License (required), Contribution Guidelines, Test Instructions, GitHub Username, Email Address (required).
 
 ## License
 
@@ -33,7 +33,7 @@ If you would like to contribute to this repository, please contact me via the em
 
 ## Tests
 
-To test, follow these instructions: 1. Type in terminal: > node index.js 2. Follow all the prompts and enter data. 3. When the file has been successfully created you will get a success message. 4. Go to your application directory and verify that the ReadMe file is there. 5. Open it and verify that all the data you entered is there.
+To test, follow these instructions: 1. Type in terminal: node index.js 2. Follow all the prompts and enter data. 3. When the file has been successfully created you will get a success message. 4. Go to your application directory and verify that the ReadMe file is there. 5. Open it and verify that all the data you entered is there.
 
 ## Questions
 
@@ -42,4 +42,3 @@ To test, follow these instructions: 1. Type in terminal: > node index.js 2. Foll
 GitHub Profile: [@johannaleal](http://github.com/johannaleal)
 
 Email: <johannarleal@gmail.com>
-    

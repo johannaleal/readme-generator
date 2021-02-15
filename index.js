@@ -170,7 +170,7 @@ ${userResponses.testInstructions}
 GitHub Profile: [@${userResponses.gitHubUserName}](http://github.com/${userResponses.gitHubUserName})
 
 Email: <${userResponses.email}>
-    `;
+`;
 
     return content;
 }
