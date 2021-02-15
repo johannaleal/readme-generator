@@ -6,10 +6,13 @@
 
 In this project, I have created a command-line application to generate a README file. The application will dynamically generate a professional ReadMe.md file from a user’s input using the Inquirer package. The user will be presented with various prompts whose data will be used to populate the sections of the ReadMe file. Some of these sections will be validated including the project title, project description, and email address.
 
+There is a sample output file called README_test.md in the directory.
+
 ## Table of Contents
 
 * [Installation](#installation)
 * [Usage](#usage)
+* [Screenshots](#screenshots)
 * [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
@@ -32,8 +35,6 @@ In this project, I have created a command-line application to generate a README 
 
 ## Usage
 
-![Demo GIF](./images/ReadMeGeneratorWalkthrough.gif)
-
 To run this app, open the console in the directory where the index.js file is and run the following command:
 >node index.js
 
@@ -49,7 +50,9 @@ You will receive prompts for the following:
 8. GitHub Username - optional
 9. Email Address - required and validated for correct format
 
-_Note that for Installation Instructions and Test Instructions, you will be prompted to enter your information in your local editor. If there are several steps involved in either of these sections, it is best to use numbered lists._
+A ReadMe.MD file will be created in the main directory of the application.
+
+![Demo GIF](./images/ReadMeGeneratorWalkthrough.gif)
 
 ## Screenshots
 
@@ -88,7 +91,7 @@ To test, follow these instructions:
 4. Go to your application directory and verify that the ReadMe file is there.
 5. Open it and verify that all the data you entered is there.
 
-_NOTE: FOR TESTING PURPOSES I NAMED THE OUTPUT FILE README_TEST.MD SO AS NOT TO OVERWRITE MY ACTUAL README FILE. YOU CAN CHANGE THIS IN THE writeUserInfo CONST._
+_NOTE: FOR TESTING PURPOSES I NAMED THE OUTPUT FILE README_TEST.MD SO AS NOT TO OVERWRITE MY ACTUAL README FILE. YOU CAN CHANGE THIS IN THE writeUserInfo CONST IN THE INDEX.JS FILE (LINE 101)._
 
 ## Questions
 
