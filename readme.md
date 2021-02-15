@@ -22,8 +22,7 @@ There is a sample output file called README_test.md in the directory.
 
 1. Install node.js. It can be downloaded here: [node.js Downloads](https://nodejs.org/en/download/)
 2. Install npm inquirer package by typing:
-    >npm init -y
-    >npm install inquirer
+    >npm init -y ; npm install inquirer
 3. Install inquirer email-validator package by typing:
     >npm install email-validator
 4. Make sure that the following files exist in your application folder:
