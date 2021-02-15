@@ -49,7 +49,7 @@ You will receive prompts for the following:
 8. GitHub Username - optional
 9. Email Address - required and validated for correct format
 
-A ReadMe.MD file will be created in the main directory of the application.
+A README.md file will be created in the main directory of the application.
 
 ![Demo GIF](./images/ReadMeGeneratorWalkthrough.gif)
 
