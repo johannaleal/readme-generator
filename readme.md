@@ -32,7 +32,7 @@ In this project, I have created a command-line application to generate a README 
 
 ## Usage
 
-![Demo GIF](./images/ReadMeGeneratorDemo.gif)
+![Demo GIF](https://media.giphy.com/media/AJm8DsP6pJtZwtiXc1/giphy.gif)
 
 To run this app, open the console in the directory where the index.js file is and run the following command:
 >node index.js
