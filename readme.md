@@ -7,6 +7,7 @@
 In this project, I have created a command-line application to generate a README file. The application will dynamically generate a professional ReadMe.md file from a user’s input using the Inquirer package. The user will be presented with various prompts whose data will be used to populate the sections of the ReadMe file. Some of these sections will be validated including the project title, project description, and email address.
 
 ## Table of Contents
+
 * [Installation](#installation)
 * [Usage](#usage)
 * [License](#license)
@@ -15,29 +16,29 @@ In this project, I have created a command-line application to generate a README 
 * [Questions](#questions)
 
 ## Installation
+
 1. Install node.js. It can be downloaded here: [node.js Downloads](https://nodejs.org/en/download/)
 2. Install npm inquirer package by typing:
     >npm init -y
-
     >npm install inquirer
 3. Install inquirer email-validator package by typing:
     >npm install email-validator
 4. Make sure that the following files exist in your application folder:
->- index.js
->- .gitignore
+    >index.js
+    >.gitignore
 5. The .gitmore file should contain the following lines:
     >node_modules/
-
     >.DS_Store/
 
 ## Usage
-![Demo GIF](./images/ReadMeGeneratorDemo.gif)
 
+![Demo GIF](./images/ReadMeGeneratorDemo.gif)
 
 To run this app, open the console in the directory where the index.js file is and run the following command:
 >node index.js
 
 You will receive prompts for the following:
+
 1. Project Title - required
 2. Project Description - required
 3. Installation Instructions - optional
@@ -52,31 +53,31 @@ _Note that for Installation Instructions and Test Instructions, you will be prom
 
 ## Screenshots
 
-#### Enter Project Title, Project Description, Installation Instructions
+### Enter Project Title, Project Description, Installation Instructions
 
 ![Enter Title Description Install Instructions](./images/screen1.PNG)
 
-#### Enter Installation Instructions Editor
+### Enter Installation Instructions Editor
 
 ![Enter Install Instructions Editor](./images/screen2.PNG)
 
-#### Installation Instructions Editor Prompt to Save
+### Installation Instructions Editor Prompt to Save
 
 ![Installation Instructions Editor Prompt to Save](./images/screen3.PNG)
 
-#### Enter Usage Instructions Prompt
+### Enter Usage Instructions Prompt
 
 ![Enter Usage Instructions Prompt](./images/Usage1.PNG)
 
-#### Enter Usage Instructions Editor
+### Enter Usage Instructions Editor
 
 ![Enter Usage Instructions Editor](./images/Usage2.PNG)
 
-#### Enter Usage Instructions Prompt to Save
+### Enter Usage Instructions Prompt to Save
 
 ![Enter Usage Instructions Prompt to Save](./images/Usage3.PNG)
 
-#### License List Prompt
+### License List Prompt
 
 ![Choose License from List](./images/screen4.PNG)
 
@@ -96,15 +97,18 @@ _Note that for Installation Instructions and Test Instructions, you will be prom
 
 ![File Successfully Generated Message](./images/screen8.PNG)
 
-
 ## License
+
 This application is covered under license: MIT License.
 
 ## Contributing
+
 If you would like to contribute to this repository, please contact me via the email below to discuss the changes you wish to make.
 
 ## Tests
-To test, follow these instructions: 
+
+To test, follow these instructions:
+
 1. Type in terminal:
     > node index.js
 2. Follow all the prompts and enter data.
@@ -115,9 +119,9 @@ To test, follow these instructions:
 _NOTE: FOR TESTING PURPOSES I NAMED THE OUTPUT FILE README_TEST.MD SO AS NOT TO OVERWRITE MY ACTUAL README FILE. YOU CAN CHANGE THIS IN THE writeUserInfo CONST._
 
 ## Questions
-### Contact Information:
+
+### Contact Information
 
 GitHub Profile: [@johannaleal](http://github.com/johannaleal)
 
 Email: <johannarleal@gmail.com>
-    

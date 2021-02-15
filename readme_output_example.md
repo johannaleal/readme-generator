@@ -15,13 +15,14 @@ In this project, I have created a command-line application to generate a README 
 * [Questions](#questions)
 
 ## Installation
-1. Install node.js.
-2. Install npm inquirer package by typing:
+1. Clone this repo to your machine.
+2. Install node.js.
+3. Install npm inquirer package by typing:
 npm init -y
 npm install inquirer
-3. Install inquirer email-validator package by typing:
+4. Install inquirer email-validator package by typing:
 npm install email-validator
-4. Make sure that the following files exist in your application folder:
+5. Make sure that the following files exist in your application folder:
 - index.js
 - .gitignore;
 
