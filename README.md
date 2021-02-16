@@ -28,7 +28,7 @@ There is a sample output file called README_test.md in the directory.
 4. Make sure that the following files exist in your application folder:
     >index.js
     >.gitignore
-5. The .gitmore file should contain the following lines:
+5. The .gitignore file should contain the following lines:
     >node_modules/
     >.DS_Store/
 
